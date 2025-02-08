@@ -1,0 +1,106 @@
+body {
+    margin:0;
+    font-family: 'EB Garamond', serif;
+    background-color: #B9D9EB; 
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    /* color: #006699; */
+    color:#FFFFFF;
+}
+
+#vid{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.heading {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Two back up back-ground color
+    background-color: #000513; 
+    background: linear-gradient(180deg, #0D1B2F, #1B2432); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+#logo{
+    width: 1.3em;
+    height: auto;
+}
+header a{
+    text-decoration: none;
+}
+#projectName{
+    font-family: 'Cinzel', serif;
+    display: flex;
+}
+.nav-items{
+    display: flex;
+    list-style: none;
+    color:#FFFFFF;
+    padding-right: 20px;
+}
+.nav-items a{
+    color: #FFFFFF ;
+    font-family: 'Cinzel', serif;
+    display: flex;
+    margin: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+.nav-items li {
+    margin: 0 15px;
+}
+.nav-items a:hover {
+    color: #00AEEF;
+}
+
+
+.attractiveContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    max-width: 700px;
+}
+#contentTitle{
+    font-size: 2.5rem;
+    background: linear-gradient(120deg, #00AEEF, #68D2E8, #B9D9EB);    background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+}
+#diffPart{
+    background: linear-gradient(120deg, #00AEEF, #68D2E8, #FF4D4D, #FF6B6B);
+    background-clip: text;
+}
+button {
+    background: rgba(0, 174, 239, 0.2); 
+    border: 2px solid rgba(0, 174, 239, 0.5);
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 174, 239, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+button:hover {
+    background: rgba(0, 174, 239, 0.5);
+    box-shadow: 0 0 20px rgba(0, 174, 239, 0.8);
+    transform: translateY(-3px);
+}
+
