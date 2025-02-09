@@ -19,7 +19,7 @@ let drawed = false;
 
 
 backgroundSpiral = new Image();
-backgroundSpiral.src = "./Icons/spiraPic.png"; // Ensure this path is correct
+backgroundSpiral.src = "./Icons/spiraPic.png";
 
 backgroundSpiral.onload = function () {
     ctx.globalAlpha = 0.1;
