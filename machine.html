@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Icons/generated-icon-removebg.png" sizes = '64x64'>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/machine.css">
     <title>Spiral Analysis Machine</title>
 </head>
 <body>
-    
+    <div class = 'video'>
+        <video src = './Icons/indexBackgroundVid.mp4.mp4' id = 'vid' autoplay loop muted></video>
+    </div>
+    <header class = 'heading'>
+        <a href = './index.html'><h1 id = 'projectName'><img id = 'logo' src = './Icons/generated-icon-removebg.png' />Spiral Analysis</h1></a>
+        <ul class="nav-items">
+        <li><a href= './index.html'>Home</a></li>
+        <li><a href= './machine.html'>Machine</a></li>
+        <li><a href= './index.html'>learn More</a></li>
+        <li><a href= './Info.html'>About Us</a></li>
+        </ul>
+    </header>
+    <div class = 'backgroundBoard'>
+        <h2>Draw here</h2>
+        <canvas id="spiralCanvas" width="300" height="250" style ='border:1px solid black'></canvas>
+        
+        <div class="button-container">
+            <button id="clearButton">Clear</button>
+            <button id="analyzeButton">Analyze</button>
+        </div>
+
+    </div>
+    <script src = './js/main.js'></script>
 </body>
 </html>

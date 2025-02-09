@@ -1,0 +1,25 @@
+.backgroundBoard{
+    width:60%;
+    height: 90vh;
+    max-width: 700px;
+    min-width: 400px;
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    top: 110px; 
+    transform: translateX(-50%); 
+    height: calc(100vh - 110px);
+    text-align: center;
+    background: rgb(181, 254, 255); 
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+h2{
+    color: #230f0f;
+}
+
+button{
+    background: none;
+
+}
