@@ -17,6 +17,16 @@ let startx;
 let starty;
 let drawed = false;
 
+
+backgroundSpiral = new Image();
+backgroundSpiral.src = "./Icons/spiraPic.png"; // Ensure this path is correct
+
+backgroundSpiral.onload = function () {
+    ctx.globalAlpha = 0.1;
+    ctx.drawImage(backgroundSpiral, 0, 0, canvas.width, canvas.height);
+    ctx.globalAlpha = 1;
+};
+
 function getMousePosition(e) {
     const rect = canvas.getBoundingClientRect();
     return {
@@ -29,6 +39,7 @@ function getMousePosition(e) {
 
 clearButton.addEventListener('click', ()=>{
     ctx.clearRect(0,0,canvas.width,canvas.height)
+    backgroundSpiral.onload();
 })
 
 canvas.addEventListener('mousedown', (e)=>{
