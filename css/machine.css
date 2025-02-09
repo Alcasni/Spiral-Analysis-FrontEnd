@@ -1,7 +1,7 @@
 .backgroundBoard{
     width:60%;
     height: 90vh;
-    max-width: 700px;
+    max-width: 900px;
     min-width: 400px;
     position:absolute;
     top: 55%;
@@ -22,4 +22,12 @@ h2{
 button{
     background: none;
 
+}
+
+canvas{
+    width: 90%;
+    max-width: 800px;
+    height:70%;
+    max-height:1000px;
+    border: 1px solid black;
 }

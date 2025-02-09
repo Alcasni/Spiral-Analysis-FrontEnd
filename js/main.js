@@ -25,6 +25,8 @@ function getMousePosition(e) {
     };
 }
 
+
+
 clearButton.addEventListener('click', ()=>{
     ctx.clearRect(0,0,canvas.width,canvas.height)
 })
@@ -43,7 +45,7 @@ canvas.addEventListener('mousemove', (e)=>{
         return;
     }
     const coordinates = getMousePosition(e);
-    ctx.lineWidth = 3;
+    ctx.lineWidth = .5;
     ctx.strokeStyle = '#000';
     ctx.lineCap = 'round';
     ctx.lineTo(coordinates.x, coordinates.y);
