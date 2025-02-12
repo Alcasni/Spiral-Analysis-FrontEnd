@@ -1,8 +1,6 @@
 .backgroundBoard{
-    width:60%;
+    width:600px;
     height: 90vh;
-    max-width: 900px;
-    min-width: 400px;
     position:absolute;
     top: 55%;
     left: 50%;

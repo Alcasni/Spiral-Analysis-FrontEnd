@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Analysis</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Speed vs. Time Graph</h1>
+    <canvas id="speedChart" style="width:100%;max-width:700px"></canvas>
+
+    <script>
+        const speedData = JSON.parse(localStorage.getItem("speedData")) || [];
+        const times = speedData.map(a => (a.time - speedData[0].time) / 1000); // Convert to seconds
+        const speeds = speedData.map(a => a.speed);
+
+        const ctx = document.getElementById("speedChart").getContext("2d");
+        new Chart(ctx, {
+            type: "line",
+            data: {
+                labels: times,
+                datasets: [{
+                    label: "Speed (px/s)",
+                    data: speeds,
+                    borderColor: "blue",
+                    fill: false
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: { title: { display: true, text: "Time (s)" } },
+                    y: { title: { display: true, text: "Speed (px/s)" } }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
